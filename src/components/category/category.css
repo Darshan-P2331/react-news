@@ -1,0 +1,33 @@
+.categories__container {
+    display: flex;
+    justify-content: center;
+}
+
+.categories {
+    display: flex;
+    gap: 2rem;
+    overflow-y: scroll;
+    margin: 1rem auto;
+}
+
+.categories::-webkit-scrollbar {
+    display: none;
+}
+
+.pill {
+    border: 2px solid var(--color-2);
+    color: var(--color-2);
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background: transparent;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: var(--transition);
+}
+
+.pill:hover,.pill.active{
+    background: var(--color-2);
+    color: var(--color-bg);
+    border-color: transparent;
+}
